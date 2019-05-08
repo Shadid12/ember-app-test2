@@ -1,1 +1,14 @@
 <h1>Main Page</h1>
+
+{{input 
+    type="email" 
+    value=emailAddress 
+    placeholder="e-mail address!!" 
+    autofocus="autofocus"}}
+
+<button 
+    disabled={{isDisabled}}
+    {{action 'saveInvitation'}}
+>
+    Request invitation
+</button>
