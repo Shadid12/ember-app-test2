@@ -6,6 +6,12 @@
     placeholder="e-mail address!!" 
     autofocus="autofocus"}}
 
+{{#unless isValid}}
+    <br />
+    <span class="error-main">Email Not Valid</span>
+{{/unless}}
+
+<br />
 <button 
     disabled={{isDisabled}}
     {{action 'saveInvitation'}}
